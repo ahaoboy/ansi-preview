@@ -63,13 +63,13 @@ export function activate(context: vscode.ExtensionContext): void {
 	statusBarItem.show();
 
 	// Open extension's page on click over statusbar item
-	const openExtensionPageCommand = vscode.commands.registerCommand(
-		"extension.openExtensionPage",
-		() => {
-			const extensionPageUrl = "vscode:extension/Dheovani.svg-viewer";
-			vscode.env.openExternal(vscode.Uri.parse(extensionPageUrl));
-		},
-	);
+	// const openExtensionPageCommand = vscode.commands.registerCommand(
+	// 	"extension.openExtensionPage",
+	// 	() => {
+	// 		const extensionPageUrl = "vscode:extension/Dheovani.svg-viewer";
+	// 		vscode.env.openExternal(vscode.Uri.parse(extensionPageUrl));
+	// 	},
+	// );
 
 	// Open preview with command 'ctrl+shift+t' when text editor is open in an svg file
 	const openPreviewOnFocusCommand = vscode.commands.registerCommand(
@@ -123,7 +123,7 @@ export function activate(context: vscode.ExtensionContext): void {
 	);
 
 	context.subscriptions.push(statusBarItem);
-	context.subscriptions.push(openExtensionPageCommand);
+	// context.subscriptions.push(openExtensionPageCommand);
 	context.subscriptions.push(openPreviewOnFocusCommand);
 	context.subscriptions.push(openPreviewMenuCommand);
 	context.subscriptions.push(openPreviewOnEditorButton);
