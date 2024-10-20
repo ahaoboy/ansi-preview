@@ -3,6 +3,14 @@
   "displayName": "ansi-preview",
   "description": "ansi-preview",
   "version": "0.0.1",
+  "author": "ahaoboy",
+  "license": "MIT",
+  "publisher": "ahaoboy",
+  "homepage": "https://github.com/ahaoboy/ansi2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahaoboy/ansi2.git"
+  },
   "engines": {
     "vscode": "^1.94.0"
   },
